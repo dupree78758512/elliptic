@@ -246,7 +246,7 @@ Key tools:
 - Current version: 6.6.1
 - Run `npm version <patch|minor|major>` to bump the version.
 - The `"version"` lifecycle script runs `grunt dist && git add dist/`.
-- Dist files are built and committed with version bumps
+- Dist files are built and committed with version bumps.
 
 ## References
 
