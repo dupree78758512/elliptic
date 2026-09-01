@@ -104,11 +104,13 @@ npm run unit              # Run unit tests with Istanbul coverage
 npm run test              # Run lint + unit tests (full test suite)
 
 # Building
-grunt dist                # Build distribution files (runs with npm version)
+grunt dist                 # Build distribution files
+
+# Versioning
+npm version <patch|minor|major>  # Runs `grunt dist && git add dist/` via the "version" lifecycle script
 
 # Benchmarks
 node benchmarks/index.js   # Run performance benchmarks
-```
 
 ### Testing Approach
 
