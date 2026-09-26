@@ -104,10 +104,10 @@ npm run unit              # Run unit tests with Istanbul coverage
 npm run test              # Run lint + unit tests (full test suite)
 
 # Building
-grunt dist                 # Build distribution files
+grunt dist                 # Manually build distribution files
 
 # Versioning
-npm version <patch|minor|major>  # Runs `grunt dist && git add dist/` via the "version" lifecycle script
+npm version <patch|minor|major>  # Bump the version; automatically runs the "version" lifecycle script
 
 # Benchmarks
 node benchmarks/index.js   # Run performance benchmarks
@@ -244,8 +244,9 @@ Key tools:
 ### Version and Release
 
 - Current version: 6.6.1
-- Version bumping is automated (see `npm run version` script)
-- Dist files are built and committed with version bumps
+- Run `npm version <patch|minor|major>` to bump the version.
+- The `"version"` lifecycle script runs `grunt dist && git add dist/`.
+- Dist files are built and committed with version bumps.
 
 ## References
 
